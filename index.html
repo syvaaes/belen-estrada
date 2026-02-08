@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintura Crítica</title>
+
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Belén Estrada Franco</h1>
+    <p>
+      "Mensaje o slogan".
+    </p>
+  </header>
+
+  <section class="sobre-mi">
+    <h2>Sobre mi obra</h2>
+        <p>"Sobre mi o mi obra"</p>
+    <!--<p>
+      Mi trabajo nace del conflicto: la violencia normalizada, la tristeza
+      colectiva y la desconexión del ser humano con la naturaleza.
+      Pinto cuerpos, paisajes y emociones que resisten, que sangran,
+      pero que aún buscan unión y sentido.
+    </p>-->
+  </section>
+
+  <section>
+    <h2>Obras destacadas</h2>
+
+    <div class="galeria">
+
+      <div class="obra">
+        <div class="imagen-obra">
+            <img 
+            src="imagenes/imagen_1.jpg" 
+            alt="Obra 1"
+            onclick="abrirModal(this.src)"
+            >
+        </div>
+
+        <h3>Obra 1</h3>
+        <p>Descripción</p>
+       </div>
+
+      <div class="obra">
+        <div class="imagen-obra">
+            <img 
+            src="imagenes/imagen_2.jpg" 
+            alt="Obra 2"
+            onclick="abrirModal(this.src)"
+            >
+        </div>
+
+        <h3>Obra 2</h3>
+        <p>Descripción</p>
+       </div>
+
+       <div class="obra">
+        <div class="imagen-obra">
+            <img 
+            src="imagenes/imagen_3.jpg" 
+            alt="Obra 3"
+            onclick="abrirModal(this.src)"
+            >
+        </div>
+
+        <h3>Obra 3</h3>
+        <p>Descripción</p>
+       </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 · Pintura crítica y emocional
+  </footer>
+
+  <div id="modal" class="modal" onclick="cerrarModal()">
+     <img id="modal-img">
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
