@@ -121,7 +121,6 @@ footer {
   }
 }
 
-
 /* MODAL */
 
 .modal {
@@ -147,6 +146,7 @@ footer {
   text-align: justify;
   max-width: 95ch;   /* controla el ancho del texto */
   margin: 0 auto;     /* centra el bloque */
+  background-color: #ffffff;
 }
 
 .sobre-mi-wrapper {
