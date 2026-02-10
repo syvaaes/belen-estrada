@@ -16,3 +16,17 @@ document.addEventListener("keydown", function (e) {
     cerrarModal();
   }
 });
+
+// Toggle para móviles/tablets
+document.addEventListener('DOMContentLoaded', () => {
+  const wrappers = document.querySelectorAll('.sobre-mi-wrapper');
+
+  wrappers.forEach(wrapper => {
+    wrapper.addEventListener('click', () => {
+      // Solo en dispositivos sin hover (móvil / tablet)
+      if (window.matchMedia('(hover: none)').matches) {
+        wrapper.classList.toggle('active');
+      }
+    });
+  });
+});

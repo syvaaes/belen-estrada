@@ -114,6 +114,14 @@ footer {
   }
 }
 
+@media (hover: none) {
+  .preview span {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+}
+
+
 /* MODAL */
 
 .modal {
@@ -145,6 +153,14 @@ footer {
   position: relative;
   max-width: 78ch;
   margin: 0 auto;
+}
+
+.sobre-mi-wrapper:hover .preview {
+  opacity: 0;
+}
+
+.sobre-mi-wrapper:hover .full {
+  opacity: 1;
 }
 
 /* Vista inicial */
