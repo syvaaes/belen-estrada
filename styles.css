@@ -102,25 +102,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE (PC) */
-
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 3.5rem;
-  }
-
-  .galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (hover: none) {
-  .preview span {
-    font-size: 0.9rem;
-    opacity: 0.7;
-  }
-}
-
 /* MODAL */
 
 .modal {
@@ -144,8 +125,8 @@ footer {
 /* SOBRE MI */
 .bio {
   text-align: justify;
-  max-width: 95ch;   /* controla el ancho del texto */
-  margin: 0 auto;     /* centra el bloque */
+  max-width: 95ch;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -204,6 +185,17 @@ footer {
   opacity: 1;
 }
 
+/* RESPONSIVE (PC) */
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Animación suave */
 @keyframes aparecer {
@@ -214,5 +206,20 @@ footer {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .sobre-mi-wrapper {
+    position: static;
+  }
+
+  .preview {
+    display: none;
+  }
+
+  .full {
+    position: static;
+    opacity: 1;
   }
 }

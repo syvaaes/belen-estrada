@@ -16,17 +16,14 @@ document.addEventListener("keydown", function (e) {
     cerrarModal();
   }
 });
+// Cerrar al hacer clic fuera de la imagen
+function toggleBio() {
+  if (window.innerWidth <= 767) {
+    const preview = document.querySelector('.preview');
+    const full = document.querySelector('.full');
 
-// Toggle para móviles/tablets
-document.addEventListener('DOMContentLoaded', () => {
-  const wrappers = document.querySelectorAll('.sobre-mi-wrapper');
-
-  wrappers.forEach(wrapper => {
-    wrapper.addEventListener('click', () => {
-      // Solo en dispositivos sin hover (móvil / tablet)
-      if (window.matchMedia('(hover: none)').matches) {
-        wrapper.classList.toggle('active');
-      }
-    });
-  });
-});
+    preview.style.display = 'none';
+    full.style.opacity = '1';
+    full.style.position = 'static';
+  }
+}
