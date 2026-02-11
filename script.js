@@ -8,7 +8,7 @@ function abrirModal(src, titulo = "Título de la obra", descripcion = "Descripci
   modalImg.src = src;                 // imagen
   tituloObra.textContent = titulo;    // título
   descripcionObra.textContent = descripcion; // descripción
-  conceptoObra.textContent = concepto;       // descripción conceptual
+  conceptoObra.innerHTML = concepto;       // descripción conceptual
 
   modal.style.display = "flex";       // mostrar modal
 }
