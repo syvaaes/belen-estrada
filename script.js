@@ -1,9 +1,16 @@
-function abrirModal(src) {
+function abrirModal(src, titulo = "Título de la obra", descripcion = "Descripción de la obra", concepto = "") {
   const modal = document.getElementById("modal");
   const modalImg = document.getElementById("modal-img");
+  const tituloObra = document.getElementById("titulo-obra");
+  const descripcionObra = document.getElementById("descripcion-obra");
+  const conceptoObra = document.getElementById("concepto-obra");
 
-  modalImg.src = src;
-  modal.style.display = "flex";
+  modalImg.src = src;                 // imagen
+  tituloObra.textContent = titulo;    // título
+  descripcionObra.textContent = descripcion; // descripción
+  conceptoObra.textContent = concepto;       // descripción conceptual
+
+  modal.style.display = "flex";       // mostrar modal
 }
 
 function cerrarModal() {
@@ -11,11 +18,10 @@ function cerrarModal() {
 }
 
 // Cerrar con tecla ESC
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") {
-    cerrarModal();
-  }
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") cerrarModal();
 });
+
 // Cerrar al hacer clic fuera de la imagen
 function toggleBio() {
   if (window.innerWidth <= 767) {

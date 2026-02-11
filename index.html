@@ -4,100 +4,144 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belén Estrada Franco</title>
-
-  <!-- Enlace al archivo CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
+  <!-- HEADER -->
   <header>
     <h1>Belén Estrada Franco</h1>
   </header>
 
+  <!-- SOBRE MI -->
   <section class="sobre-mi">
-    <h2>Sobre mi</h2>
+    <h2>Sobre mí</h2>
 
-        <div class="sobre-mi-wrapper">
-        <div class="preview" onclick="toggleBio()">
-          <img src="imagenes/imagen_4.jpg">
-          <p>
-            Artista visual · Pintura surrealista · Memoria · Territorio · Estados psíquicos
-          </p>
-          <span>Leer statement</span>
-        </div>
+    <div class="sobre-mi-wrapper">
+      <!-- Preview inicial -->
+      <div class="preview" onclick="toggleBio()">
+        <img src="imagenes/imagen_4.jpg" alt="Belén Estrada Franco">
+        <p>Artista visual · Pintura surrealista · Memoria · Territorio · Estados psíquicos</p>
+        <span>Leer statement</span>
+      </div>
 
-        <p class="bio full">
-          Mi nombre es Belén Estrada Franco. Soy artista visual originaria del Estado de México, especializada en pintura
-          con un enfoque surrealista. A través de mi obra, exploro los vínculos entre lo cotidiano y lo simbólico.
-          Mi trabajo parte de una mirada introspectiva y sensorial sobre el entorno, reinterpretando desde lo onírico. Me
-          interesa crear imágenes que, más allá de representar una realidad visible, convoquen al espectador a habitar lo
-          invisible: los afectos, las memorias, las tensiones sociales y las experiencias fragmentadas que conforman nuestra
-          percepción del mundo. La pintura, como medio, me permite traducir estas dimensiones en escenas poéticas donde lo
-          mágico y lo infraordinario conviven.
-          A lo largo de mi trayectoria he participado en exposiciones colectivas y he desarrollado proyectos pictóricos que
-          articulan una investigación estética y conceptual sobre el territorio, la identidad y los estados psíquicos. Mi obra
-          busca generar un diálogo entre el arte y la vida, abriendo espacios de reflexión sensible desde lo visual.
-          Este portafolio reúne una selección de piezas que forman parte de esa exploración constante: imágenes que brotan
-          del inconsciente, pero están ancladas en lo más concreto de la experiencia cotidiana. Cada pintura es una cartografía
-          emocional, un intento de nombrar lo que no siempre se puede decir con palabras.
-        </p>
-  </section>
-
-  <section>
-    <h2>Obras destacadas</h2>
-
-    <div class="galeria">
-
-      <div class="obra">
-        <div class="imagen-obra">
-            <img 
-            src="imagenes/imagen_1.jpg" 
-            alt="Obra 1"
-            onclick="abrirModal(this.src)"
-            >
-        </div>
-
-        <h3>Obra 1</h3>
-        <p>Descripción</p>
-       </div>
-
-      <div class="obra">
-        <div class="imagen-obra">
-            <img 
-            src="imagenes/imagen_2.jpg" 
-            alt="Obra 2"
-            onclick="abrirModal(this.src)"
-            >
-        </div>
-
-        <h3>Obra 2</h3>
-        <p>Descripción</p>
-       </div>
-
-       <div class="obra">
-        <div class="imagen-obra">
-            <img 
-            src="imagenes/imagen_3.jpg" 
-            alt="Obra 3"
-            onclick="abrirModal(this.src)"
-            >
-        </div>
-
-        <h3>Obra 3</h3>
-        <p>Descripción</p>
-       </div>
+      <!-- Bio completa -->
+      <p class="bio full">
+        Mi nombre es Belén Estrada Franco. Soy artista visual originaria del Estado de México, especializada en pintura
+        con un enfoque surrealista. A través de mi obra, exploro los vínculos entre lo cotidiano y lo simbólico.
+        Mi trabajo parte de una mirada introspectiva y sensorial sobre el entorno, reinterpretando desde lo onírico. Me
+        interesa crear imágenes que, más allá de representar una realidad visible, convoquen al espectador a habitar lo
+        invisible: los afectos, las memorias, las tensiones sociales y las experiencias fragmentadas que conforman nuestra
+        percepción del mundo. La pintura, como medio, me permite traducir estas dimensiones en escenas poéticas donde lo
+        mágico y lo infraordinario conviven.
+        A lo largo de mi trayectoria he participado en exposiciones colectivas y he desarrollado proyectos pictóricos que
+        articulan una investigación estética y conceptual sobre el territorio, la identidad y los estados psíquicos. Mi obra
+        busca generar un diálogo entre el arte y la vida, abriendo espacios de reflexión sensible desde lo visual.
+        Este portafolio reúne una selección de piezas que forman parte de esa exploración constante: imágenes que brotan
+        del inconsciente, pero están ancladas en lo más concreto de la experiencia cotidiana. Cada pintura es una cartografía
+        emocional, un intento de nombrar lo que no siempre se puede decir con palabras.
+      </p>
     </div>
   </section>
 
+  <!-- GALERÍA -->
+  <section>
+    <h2>Obras destacadas</h2>
+    <div class="galeria">
+
+      <!-- Obra 1  -->
+      <div class="obra">
+        <div class="imagen-obra">
+          <img src="imagenes/imagen_2.jpg" 
+               alt="Arrecife del artífice"
+               onclick="abrirModal(this.src,
+               'Arrecife del artífice',
+               'Óleo sobre tela, 2019',
+               'La obra se inserta en una narrativa surrealista, donde la figura del artífice —entendido como el creador, el hacedor— se representa simbólicamente a través de estas manos metamorfoseadas que construyen y deforman la realidad. La paleta de colores vibrantes y los contrastes texturales aportan dinamismo, a la vez que acentúan la tensión entre lo orgánico y lo mecánico. Este arrecife no es natural: es producto de una mente que fabrica mundos desde el extrañamiento, la fragmentación y la multiplicidad de miradas.')">
+        </div>
+        <h3>Arrecife del artífice.</h3>
+        <p>Técnica: Óleo sobre tela · Año 2019</p>
+      </div>
+
+      <!-- Obra 2  -->
+      <div class="obra">
+        <div class="imagen-obra">
+          <img src="imagenes/imagen_6.jpg" 
+               alt="Paracaidista"
+               onclick="abrirModal(this.src,
+               'Paracaidista',
+               'Técnica: Óleo sobre tela · Año 2019',
+               'Esta obra habla de la dependencia, el control o el destino influenciado por otros. Las manos superiores pueden representar figuras de poder, sociedad o incluso entidades abstractas que tiran de los hilos de la vida. El personaje central, enraizado en su propia corporalidad, es a la vez sujeto y objeto, planta y persona, mostrando una identidad en construcción o en manipulación.')">
+        </div>
+        <h3>Paracaidista</h3>
+        <p>Técnica: Óleo sobre tela · Año 2019</p>
+      </div>
+      
+      <!-- Obra 3 -->
+      <div class="obra">
+        <div class="imagen-obra">
+          <img src="imagenes/imagen_11.jpg" 
+               alt="Niñez, Aprendizaje"
+               onclick="abrirModal(this.src,
+               'Niñez, Aprendizaje',
+               'Técnica: Óleo sobre tela · Año 2025',
+               'Lo onírico se manifiesta en la forma en que las ramas del árbol se extienden y entrelazan con una mano que parece emerger del mismo tronco, aludiendo a la conexión entre naturaleza, conocimiento y desarrollo humano. La textura densa del fondo oscuro contrasta con la claridad del libro, que se presenta como una fuente de luz simbólica en medio de un entorno sombrío. La obra evoca el poder transformador de la lectura durante la infancia, donde la imaginación y el aprendizaje se entrelazan como raíces de identidad y conciencia.')">
+        </div>
+        <h3>Niñez, Aprendizaje</h3>
+        <p>Técnica: Óleo sobre tela · Año 2025</p>
+      </div>
+
+      <div class="obra">
+        <div class="imagen-obra">
+          <img src="imagenes/imagen_8.jpg" 
+               alt="Obra 4"
+               onclick="abrirModal(this.src,'Obra 4','Descripción de la obra 4')">
+        </div>
+        <h3>Obra 4</h3>
+        <p>Descripción</p>
+      </div>
+
+      <div class="obra">
+        <div class="imagen-obra">
+          <img src="imagenes/imagen_9.jpg" 
+               alt="Obra 5"
+               onclick="abrirModal(this.src,'Obra 5','Descripción de la obra 5')">
+        </div>
+        <h3>Obra 5</h3>
+        <p>Descripción</p>
+      </div>
+
+      <div class="obra">
+        <div class="imagen-obra">
+          <img src="imagenes/imagen_10.jpg" 
+               alt="Obra 10"
+               onclick="abrirModal(this.src,'Obra 10','Descripción de la obra 10')">
+        </div>
+        <h3>Obra 10</h3>
+        <p>Descripción</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     © 2026 · Created by Alejandro Antonio Estrada Franco
   </footer>
 
+  <!-- MODAL ÚNICO -->
   <div id="modal" class="modal" onclick="cerrarModal()">
-     <img id="modal-img">
+    <div class="modal-contenido" onclick="event.stopPropagation()">
+      <button class="cerrar" onclick="cerrarModal()">&times;</button>
+      <img id="modal-img" src="" alt="Imagen de la obra">
+      <div class="modal-texto">
+        <h3 id="titulo-obra">Título de la obra</h3>
+        <p id="descripcion-obra">Descripción de la obra, técnica, año, etc.</p><br>
+        <p id="concepto-obra">Descripción conceptual: aquí va tu reflexión, idea o mensaje de la obra.</p>
+      </div>
+    </div>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
