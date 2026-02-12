@@ -9,146 +9,23 @@
 <body>
 
   <!-- HEADER -->
-  <header>
+  <header class="header-principal">
     <h1>Belén Estrada Franco</h1>
     <p>Artista visual · Pintura</p>
-  </header>
-
-  <!-- SOBRE MI -->
-  <section class="sobre-mi">
-    <h2>Sobre mí</h2>
-
-    <div class="sobre-mi-wrapper">
-      <!-- Preview inicial -->
-      <div class="preview" onclick="toggleBio()">
-        <img src="imagenes/imagen_4.jpg" alt="Belén Estrada Franco">
-        <p>Artista visual · Pintura surrealista · Memoria · Territorio · Estados psíquicos</p>
-        <span>Leer statement</span>
-      </div>
-
-      <!-- Bio completa -->
-      <p class="bio full">
-        Mi nombre es Belén Estrada Franco. Soy artista visual originaria del Estado de México, especializada en pintura
-        con un enfoque surrealista. A través de mi obra, exploro los vínculos entre lo cotidiano y lo simbólico.
-        Mi trabajo parte de una mirada introspectiva y sensorial sobre el entorno, reinterpretando desde lo onírico. Me
-        interesa crear imágenes que, más allá de representar una realidad visible, convoquen al espectador a habitar lo
-        invisible: los afectos, las memorias, las tensiones sociales y las experiencias fragmentadas que conforman nuestra
-        percepción del mundo. La pintura, como medio, me permite traducir estas dimensiones en escenas poéticas donde lo
-        mágico y lo infraordinario conviven.
-        A lo largo de mi trayectoria he participado en exposiciones colectivas y he desarrollado proyectos pictóricos que
-        articulan una investigación estética y conceptual sobre el territorio, la identidad y los estados psíquicos. Mi obra
-        busca generar un diálogo entre el arte y la vida, abriendo espacios de reflexión sensible desde lo visual.
-        Este portafolio reúne una selección de piezas que forman parte de esa exploración constante: imágenes que brotan
-        del inconsciente, pero están ancladas en lo más concreto de la experiencia cotidiana. Cada pintura es una cartografía
-        emocional, un intento de nombrar lo que no siempre se puede decir con palabras.
+      <p class="menu-links">
+        <a href="yo.html">Yo</a> ·
+        <a href="destacadas.html">Obras destacadas</a> ·
+        <a href="galeria.html">Galería</a> ·
+        <a href="yo.html">Contacto</a>
       </p>
-    </div>
-  </section>
-
-  <!-- GALERÍA -->
+    <img src="imagenes/imagen_2.jpg" alt="Belén Estrada Franco">
+  </header>
+  
   <section>
-    <h2>Obras destacadas</h2>
-    <div class="galeria">
-
-      <!-- Obra 1  -->
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_2.jpg" 
-               alt="Arrecife del artífice"
-               onclick="abrirModal(this.src,
-               'Arrecife del artífice',
-               'Óleo sobre tela, 2019',
-               'La obra se inserta en una narrativa surrealista, donde la figura del <i>artífice</i> —entendido como el creador, el hacedor— se representa simbólicamente a través de estas manos metamorfoseadas que construyen y deforman la realidad. La paleta de colores vibrantes y los contrastes texturales aportan dinamismo, a la vez que acentúan la tensión entre lo orgánico y lo mecánico.\n\n Este arrecife no es natural: es producto de una mente que fabrica mundos desde el extrañamiento, la fragmentación y la multiplicidad de miradas.')">
-        </div>
-        <h3>Arrecife del artífice.</h3>
-        <p>Técnica: Óleo sobre tela · Año 2019</p>
-      </div>
-
-      <!-- Obra 2  -->
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_6.jpg" 
-               alt="Paracaidista"
-               onclick="abrirModal(this.src,
-               'Paracaidista',
-               'Técnica: Óleo sobre tela · Año 2019',
-               'Esta obra habla de la dependencia, el control o el destino influenciado por otros. Las manos superiores pueden representar figuras de poder, sociedad o incluso entidades abstractas que tiran de los hilos de la vida. El personaje central, enraizado en su propia corporalidad, es a la vez sujeto y objeto, planta y persona, mostrando una identidad en construcción o en manipulación.')">
-        </div>
-        <h3>Paracaidista</h3>
-        <p>Técnica: Óleo sobre tela · Año 2019</p>
-      </div>
-      
-      <!-- Obra 3 -->
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_11.jpg" 
-               alt="Niñez, Aprendizaje"
-               onclick="abrirModal(this.src,
-               'Niñez, Aprendizaje',
-               'Técnica: Óleo sobre tela · Año 2025',
-               'Lo onírico se manifiesta en la forma en que las ramas del árbol se extienden y entrelazan con una mano que parece emerger del mismo tronco, aludiendo a la conexión entre naturaleza, conocimiento y desarrollo humano. La textura densa del fondo oscuro contrasta con la claridad del libro, que se presenta como una fuente de luz simbólica en medio de un entorno sombrío. La obra evoca el poder transformador de la lectura durante la infancia, donde la imaginación y el aprendizaje se entrelazan como raíces de identidad y conciencia.')">
-        </div>
-        <h3>Niñez, Aprendizaje</h3>
-        <p>Técnica: Óleo sobre tela · Año 2025</p>
-      </div>
-
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_12.png" 
-               alt="Banquete"
-               onclick="abrirModal(this.src,
-               'Banquete',
-               'Técnica: Lápiz sobre papel · Año 2019',
-               '<i>Banquete</i> puede interpretarse como una crítica a los rituales de consumo, al exceso y al sacrificio que subyace en los festines. Lejos de ser una simple naturaleza muerta, esta obra se convierte en una reflexión visual sobre los placeres que ignoramos, los cuerpos que convertimos en espectáculo y los rituales cotidianos que normalizan la opulencia y la explotación. El banquete no es solo un acto de comida, sino un acto simbólico de poder y sacrificio.')"
-               >
-        </div>
-        <h3>Banquete</h3>
-        <p>Técnica: Lápiz sobre papel · Año 2019</p>
-      </div>
-
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_13.png" 
-               alt="Acoquinada"
-               onclick="abrirModal(this.src,
-               'Acoquinada',
-               'Técnica: Carboncillo y sanguina · Año 2019',
-               '<i>Acoquinada</i> alude directamente a las secuelas del abuso sexual y la violencia de género. La postura corporal —cerrada, casi sin espacio para respirar— no es solo una imagen de miedo, sino una metáfora de la parálisis emocional que puede acompañar estas vivencias. Lejos de buscar el espectáculo del sufrimiento, esta obra invita a mirar de frente lo que muchas veces se oculta: el repliegue silencioso que deja la agresión, el cuerpo como lugar de memoria del daño, y la resistencia que persiste aún en la posición más retraída.')"
-               >
-        </div>
-        <h3>Acoquinada</h3>
-        <p>Técnica: Carboncillo y sanguina · Año 2019</p>
-      </div>
-
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_14.png" 
-               alt="El sacrificio de Amphitrite"
-               onclick="abrirModal(this.src,
-               'El sacrificio de Amphitrite',
-               'Técnica: Óleo sobre tela · Año 2024',
-               'La obra representa el caos y el descuido en el cambio climático, personificado por las dualidades de Anfitrite, ninfa de los mares, donde las expresiones figuran el impotencia del personaje ante la decadencia humana, así como a través de la sin sentido de la colocación de colores claros en la parte media de la obra y colores oscuros en la parte que colorea el cielo, se simboliza el desorden climático.')"
-               >
-        </div>
-        <h3>El sacrificio de Amphitrite</h3>
-        <p>Técnica: Óleo sobre tela · Año 2024</p>
-      </div>
-
-      <div class="obra">
-        <div class="imagen-obra">
-          <img src="imagenes/imagen_15.png" 
-               alt="Estragos de una guerra"
-               onclick="abrirModal(this.src,
-               'Estragos de una guerra',
-               'Técnica: Óleo sobre tela · Año 2024',
-               'Esta obra representa los efectos devastadores de la guerra, especialmente aquellos causados por bombas nucleares. En un paisaje árido, restos humanos, cráneos y un casco militar aparecen como testigos del horror. Tres cuervos posados sobre ruinas refuerzan la atmósfera de muerte y desolación. Al fondo, pinceladas caóticas en tonos rojos y negros evocan explosiones y destrucción.\n\n A través de una composición sombría y simbólica, la obra denuncia la pérdida humana y espiritual que dejan las guerras, evidenciando cómo la violencia persiste incluso después del silencio.')"
-               >
-        </div>
-        <h3>Estragos de una guerra</h3>
-        <p>Técnica: Óleo sobre tela · Año 2024</p>
-      </div>
-
-    </div>
+    <h2>Contacto</h2>
+    <p>Para más información sobre las obras o para solicitar una cotización, puedes contactarme a través de:</p>
+    <p>📧 Email: correo@correo.com</p>
+    <!--<p>📱 Teléfono: +52 telefono</p>-->
   </section>
 
   <!-- FOOTER -->
@@ -156,18 +33,6 @@
     © 2026 · Created by Alejandro Antonio Estrada Franco
   </footer>
 
-  <!-- MODAL ÚNICO -->
-  <div id="modal" class="modal" onclick="cerrarModal()">
-    <div class="modal-contenido" onclick="event.stopPropagation()">
-      <button class="cerrar" onclick="cerrarModal()">&times;</button>
-      <img id="modal-img" src="" alt="Imagen de la obra">
-      <div class="modal-texto">
-        <h3 id="titulo-obra">Título de la obra</h3>
-        <p id="descripcion-obra">Descripción de la obra, técnica, año, etc.</p><br>
-        <p id="concepto-obra">Descripción conceptual: aquí va tu reflexión, idea o mensaje de la obra.</p>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>

@@ -21,30 +21,71 @@ body {
 }
 
 /* HEADER */
-header {
+.header-principal {
   padding: 120px 20px;
   text-align: center;
-  /*background: linear-gradient(to bottom, #470b0b, #470b0b);*/
-  background: url('imagenes/banner4.gif') no-repeat center center;
-  background-size: cover; /* asegura que cubra todo el header */
+  background: linear-gradient(to bottom, #470b0b, #470b0b);
+  /*background: url('imagenes/banner4.gif') no-repeat center center;
+  background-size: cover; /* asegura que cubra todo el header */ 
 }
 
-header h1 {
+.header-principal img {
+  display: block;       /* evita pequeños espacios raros */
+  margin: 100px auto;    /* 20px arriba/abajo y centrada */
+  max-width: 500px;     /* opcional, controla tamaño */
+}
+
+.header-principal h1 {
   font-size: 2.5rem;
   font-weight: 200;
   letter-spacing: 2px;
   color: #ffffff;
-  font-family: "Garamond", serif;
+  font-family: "Didot", serif;
 }
 
-header p {
+.header-principal p {
   max-width: 600px;
   margin: 20px auto 0;
   color: #aaa;
   font-style: italic;
 }
 
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0 12px;
+  border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+.menu-links a:last-child {
+  border-right: none;
+}
+
+/* HEADER SECUNDARIO */
+.header-secundario {
+  padding: 20px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #470b0b, #470b0b);
+  /*background: url('imagenes/banner4.gif') no-repeat center center;
+  background-size: cover; /* asegura que cubra todo el header */ 
+}
+.menu-links-secundario a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0 12px;
+  border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+.menu-links-secundario a:last-child {
+  border-right: none;
+}
 /* SECCIONES */
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Didot", serif;
+}
+
 section {
   padding: 50px 20px;
   max-width: 1000px;
@@ -55,6 +96,7 @@ h2 {
   color: var(--acento);
   margin-bottom: 20px;
   letter-spacing: 1px;
+  font-family: "Didot", serif;
 }
 
 /* SOBRE MI */
@@ -120,8 +162,8 @@ h2 {
   background-color: #ffffff;
 }
 
-/* GALERÍA */
-.galeria {
+/* GALERÍA Y DESTACADOS*/
+.destacados {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -136,7 +178,7 @@ h2 {
 .obra h3 {
   margin-bottom: 10px;
   color: #ddd;
-  font-family: "Georgia", serif;
+  font-family: "Didot", serif;
 }
 
 .obra p {
@@ -164,6 +206,23 @@ footer {
   border-top: 1px solid var(--gris);
   color: #777;
   font-size: 0.9rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.galeria div {
+  aspect-ratio: 1 / 1; /* todas cuadradas */
+  overflow: hidden;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* MODAL - GENERAL */
@@ -235,6 +294,31 @@ footer {
   border: none;
   cursor: pointer;
   color: #333;
+}
+
+.modal-full {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-full img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.cerrar-full {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }
 
 /* RESPONSIVE */

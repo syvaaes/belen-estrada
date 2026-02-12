@@ -33,3 +33,39 @@ function toggleBio() {
     full.style.position = 'static';
   }
 }
+
+/* GALERÍA - Modal para imagen completa */
+document.addEventListener("DOMContentLoaded", function () {
+
+  const modal = document.getElementById("modal-img-full");
+  const modalImg = document.getElementById("imagen-completa");
+  const cerrar = document.querySelector(".cerrar-full");
+
+  // Abrir imagen
+  document.querySelectorAll(".galeria img").forEach(img => {
+    img.addEventListener("click", function () {
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Cerrar al hacer click en X
+  cerrar.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Cerrar al hacer click fuera de la imagen
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Cerrar con ESC
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+
+});
