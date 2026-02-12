@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cerrar = document.querySelector(".cerrar-full");
 
   // Abrir imagen
-  document.querySelectorAll(".galeria img").forEach(img => {
+  document.querySelectorAll(".galeria-galeria img").forEach(img => {
     img.addEventListener("click", function () {
       modal.style.display = "flex";
       modalImg.src = this.src;
