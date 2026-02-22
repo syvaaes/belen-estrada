@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belén Estrada Franco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -21,8 +23,19 @@
 
   <section>
     <h2>Contacto</h2>
+
+    <div class="slider">
+    <img src="imagenes/imagen_16.jpg" class="slide active">
+    <img src="imagenes/imagen_17.jpg" class="slide">
+    <img src="imagenes/imagen_18.jfif" class="slide">
+    </div>
+
     <p>Para más información sobre las obras o para solicitar una cotización, puedes contactarme a través de:</p>
-    <p>📧 Email: correo@correo.com</p>
+    <p>📧 Email: belenestfra.art@gmail.com</p>
+    <a href="https://www.instagram.com/belena.estrada?igsh=MXdkdzc5cGd5YWh6ag%3D%3D" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="fa-brands fa-instagram" style="color:#860a15; font-size:20px;"></i>
+     @belena.estrada
+    </a>
     <!--<p>📱 Teléfono: +52 telefono</p>-->
   </section>
 
@@ -30,6 +43,17 @@
   <footer>
     © 2026 · Created by Alejandro Antonio Estrada Franco
   </footer>
+
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 3000); // Cambia cada 3 segundos
+  </script>
 
 </body>   
 </html> 
